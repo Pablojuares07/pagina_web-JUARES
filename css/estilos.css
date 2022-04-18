@@ -214,6 +214,12 @@ a .botones:active{
     background:rgba(255,0,100,1);
 }
 
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 /* Fin Seccion de series */
 
 
@@ -267,6 +273,42 @@ a .botones:active{
 div.reset {
     clear: both;
 }
+
+
+/* Paginacion */
+.paginacion {
+	margin:20px 0;
+}
+
+.paginacion ul {
+	list-style:none;
+	text-align: center;
+}
+
+.paginacion ul li {
+	display:inline-block;
+	margin-right:10px;
+}
+
+.paginacion ul li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	background:#024959;
+	text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+	background:#037E8C;
+}
+
+.paginacion ul li .active {
+	background:#037E8C;
+	font-weight:bold;
+}
+/* Fin paginacion */
+
+
 
 /* Fin Seccion de todas las series */
 
@@ -354,6 +396,7 @@ div.reset {
 
 }
 
+/* Bulbasaur y Charmander - spbrepokemon.html */
 #pokemones .Bulbasaur{
     width: 20%;
     display: block;
@@ -369,14 +412,136 @@ div.reset {
     width: 20%;
     display: block;
     margin: 0% auto;
-    background: #f0a44e;
+
 }
 
 #pokemones .figure2{
     background: #f0a44e;
     border-radius: 50px;
 }
+/* Bulbasaur y Charmander - spbrepokemon.html */
 
+
+/* Squirtle y Caterpie - spbrepokemon2.html */
+#pokemones .Squirtle{
+    width: 20%;
+    display: block;
+    margin: 0% auto;
+}
+
+#pokemones .figure3{
+    background: #60dfff;
+    border-radius: 50px;
+}
+
+#pokemones .Caterpie{
+    width: 20%;
+    display: block;
+    margin: 0% auto;
+}
+
+#pokemones .figure4{
+    background: #4ef0a7;
+    border-radius: 50px;
+}
+/* Squirtle y Caterpie - spbrepokemon2.html */
+
+
+/* Weedle y Pidgey - spbrepokemon3.html  */
+#pokemones .Weedle{
+    width: 20%;
+    display: block;
+    margin: 0% auto;
+}
+
+#pokemones .figure5{
+    background: #c7a32f;
+    border-radius: 50px;
+}
+
+#pokemones .Pidgey{
+    width: 20%;
+    display: block;
+    margin: 0% auto;
+}
+
+#pokemones .figure6{
+    background: #d2f35b;
+    border-radius: 50px;
+}
+/* Weedle y Pidgey - spbrepokemon3.html  */
+
+
+/* Rattata, Spearow y Ekans - spbrepokemon4.html  */
+#pokemones .Rattata{
+    width: 20%;
+    display: block;
+    margin: 0% auto;
+}
+
+#pokemones .figure7{
+    background: #db7af3;
+    border-radius: 50px;
+}
+
+#pokemones .Spearow{
+    width: 20%;
+    display: block;
+    margin: 0% auto;
+}
+
+#pokemones .figure8{
+    background: #9e8329;
+    border-radius: 50px;
+}
+
+#pokemones .Ekans{
+    width: 20%;
+    display: block;
+    margin: 0% auto;
+}
+
+#pokemones .figure9{
+    background: #c444b9;
+    border-radius: 50px;
+}
+/* Rattata, Spearow y Ekans - spbrepokemon4.html  */
+
+
+/* Pikachu y Pidgey - spbrepokemon3.html  */
+#pokemones .Pikachu{
+    width: 20%;
+    display: block;
+    margin: 0% auto;
+}
+
+#pokemones .figure10{
+    background: #ecff83;
+    border-radius: 50px;
+}
+
+#pokemones .Sandshrew{
+    width: 20%;
+    display: block;
+    margin: 0% auto;
+}
+
+#pokemones .figure11{
+    background: #d19814;
+    border-radius: 50px;
+}
+
+#pokemones .Nidoran{
+    width: 20%;
+    display: block;
+    margin: 0% auto;
+}
+
+#pokemones .figure12{
+    background: #54aad2;
+    border-radius: 50px;
+}
+/* Weedle y Pidgey - spbrepokemon3.html  */
 
 
 /* Fin Seccion busca tu pokemon*/
