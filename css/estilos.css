@@ -242,16 +242,24 @@ ul li{
     padding: 15px;
     margin: auto;
 }
+
+.contenedor2{
+    background: #ffd29e;
+    border-bottom-left-radius : 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
   
 .capitulos img.izquierda {
     width: 140px;
     right: 105px;
+    border-radius: 30px;
 }
 
 .capitulos h1{
-    font-family: 'Kaushan Script', cursive;
-    background: #fff582;
-    border-radius: 50px;
+
+    border-radius: 30px;
+    font-size: 30px;
 }
 
 .izquierda{
@@ -547,6 +555,7 @@ div.reset {
 /* Fin Seccion busca tu pokemon*/
 
 
+
 /* Pie de pagina */
 
 footer {
@@ -650,13 +659,11 @@ footer {
 }
 
 .capitulos h1{
-    font-size: 100%;
-    background: #ff879f;
+    font-size: 20px;
 }
 
 /* Fin Seccion de todas las series */
 
-.capitulos h1
 
 
 /* Seccion de contacto */
@@ -694,5 +701,17 @@ footer {
 
 /* Fin Seccion busca tu pokemon */
 
+
+/* Seccion busca tu pokemon - CON BOOTSTRAP */
+
+.Bulbasaur{
+    display: block;
+}
+
+.texto{
+    float:inline-start;
+}
+
+/* Fin Seccion busca tu pokemon - CON BOOTSTRAP */
 
 }
