@@ -78,14 +78,26 @@ body{
     background: tomato;
 }
 
+/* Rotacion infinita del logo */
+.rotate {
+    animation: rotation 3s infinite linear;
+}
+  
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+/* Fin Rotacion infinita del logo */
+
 /* Fin comienzo de la nav */
 
 
 /* Seccion de noticias */
-
-#noticias{
-
-}
 
 #noticias .bloques_de_noticias{
     display: flex;
@@ -127,13 +139,22 @@ body{
 
 #noticias figure{
     position:relative;
-
-
 }
 
 #noticias figure img{
     width: 100%;
     border-radius: 50px;
+}
+
+#noticias figure figcaption{
+    width: auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: 'Kaushan Script', cursive;
+    background: #d75858;
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
 }
 
 /* Fin Seccion de noticias */
@@ -264,6 +285,11 @@ ul li{
 
 .izquierda{
     padding-right: 1%;
+    transition: transform .2s; 
+}
+
+.izquierda:hover {
+    transform: scale(1.5); 
 }
 
 .bloque_series h1{
@@ -369,6 +395,14 @@ div.reset {
     width: 100%;
     border-radius: 50px;
 
+}
+
+.card-img-top{
+    transition: transform .2s; 
+}
+
+.card-img-top:hover {
+    transform: scale(0.9); 
 }
 
 /* Fin Seccion de peliculas */
