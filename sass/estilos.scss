@@ -1,9 +1,33 @@
-// Variables para los colores
+// VARIABLES  PARA LOS COLORES
 $colour-white: #ffffff;
 $colour-black: #000000;
 $colour-orange: #f4722c;
 
-// Variables para las tipografias
+// MIXIN
+@mixin pagina() {
+    background: #f4cfff;
+}
+
+.contenedor_todo{
+    @include pagina();
+}
+
+// EXTEND
+.contacto{
+    background: #ffe25f;
+    padding-left: 15%;
+    padding-bottom: 5%;
+    border-radius: 50px;
+}
+
+// MAP-GET
+$estilonav:(
+    color: #f4722c,
+    bordeder: 50px,
+    bordeizq: 50px,
+);
+
+// VARIABLES PARA LAS TIPOGRAFIAS
 $typography-news: 'Kaushan Script', cursive;
 $typography-contact: 'Fredoka One';
 
@@ -13,22 +37,22 @@ $typography-contact: 'Fredoka One';
     box-sizing: border-box;
 }
 
-/* Contenedor de la pagina */
+/* CONTENEDOR DE LA PAGINA */
 .contenedor_todo{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Fin Contenedor de la pagina */
+/* FIN CONTENEDOR DE LA PAGINA */
 
-/* Comienzo de la nav */
+/* COMIENZO DE LA NAV */
 .nav{
-    background: $colour-orange;
+    background: map-get($estilonav, color);
     height: 80px;
     color: $colour-white;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: map-get($estilonav, bordeder);
+    border-bottom-right-radius: map-get($estilonav, bordeizq);
 }
 
 .nav_contenedor{
@@ -80,7 +104,7 @@ $typography-contact: 'Fredoka One';
     background: tomato;
 }
 
-/* Rotacion infinita del logo */
+/* ROTACION INFINITA DEL LOGO */
 .rotate {
     animation: rotation 3s infinite linear;
 }
@@ -93,11 +117,11 @@ $typography-contact: 'Fredoka One';
       transform: rotate(359deg);
     }
 }
-/* Fin Rotacion infinita del logo */
-/* Fin comienzo de la nav */
+/* FIN ROTACION INFINITA DEL LOGO */
+/* FIN COMIENZO DE LA NAV */
 
 
-/* Seccion de noticias */
+/* SECCION DE NOTICIAS */
 #noticias{
     .bloques_de_noticias{
         display: flex;
@@ -156,9 +180,9 @@ $typography-contact: 'Fredoka One';
         left: 15px;
     }
 }
-/* Fin Seccion de noticias */
+/* FIN SECCION DE NOTICIAS */
 
-/* Seccion de contacto */
+/* SECCION DE CONTACTO */
 .text{
     width: 80%;
     max-width: 1000px;
@@ -184,15 +208,12 @@ $typography-contact: 'Fredoka One';
     }
 
     .contacto_contenedor{
-        background: #ffe25f;
-        padding-left: 15%;
-        padding-bottom: 5%;
-        border-radius: 50px;
+        @extend .contacto;
     }
 }
-/* Fin Seccion de contacto */
+/* FIN SECCION DE CONTACTO */
 
-/* Seccion de series */
+/* SECCION DE SERIES */
 .series_contenedor{
     padding-top: 1%;
 }
@@ -203,9 +224,9 @@ $typography-contact: 'Fredoka One';
     padding-right: 1%;
     padding-top: 1%;
 }
-/* Fin Seccion de series */
+/* FIN SECCION DE SERIES */
 
-/* Seccion de todas las series */
+/* SECCION DE TODAS LAS SERIES */
 #todas_las_series{
     padding-left: 3%;
     padding-bottom: 1%;
@@ -236,7 +257,6 @@ $typography-contact: 'Fredoka One';
     }
 
     h1{
-
         border-radius: 30px;
         font-size: 30px;
     }
@@ -269,9 +289,9 @@ $typography-contact: 'Fredoka One';
 div.reset {
     clear: both;
 }
-/* Fin Seccion de todas las series */
+/* FIN SECCION DE TODAS LAS SERIES */
 
-/* Seccion de peliculas */
+/* SECCION DE PELICULAS */
 #peliculas{
     padding-left: 3%;
     padding-bottom: 1%;
@@ -319,9 +339,9 @@ div.reset {
     transform: scale(0.9); 
 }
 
-/* Fin Seccion de peliculas */
+/* FIN SECCION DE PELICULAS */
 
-/* Seccion busca tu pokemon*/
+/* SECCION BUSCA TU POKEMON */
 #pokemones{
 
     .bloques_de_pokemon{
@@ -351,142 +371,15 @@ div.reset {
         text-align: center;
     }
 
-    .Bulbasaur{
-        width: 20%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .figure{
-        background: #b7fb64;
-        border-radius: 50px;
-    }
-
-    .Charmander{
-        width: 20%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .figure2{
-        background: #f0a44e;
-        border-radius: 50px;
-    }
-
-    .Squirtle{
-        width: 20%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .figure3{
-        background: #60dfff;
-        border-radius: 50px;
-    }
-
-    .Caterpie{
-        width: 20%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .figure4{
-        background: #4ef0a7;
-        border-radius: 50px;
-    }
-
-    .Weedle{
-        width: 20%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .figure5{
-        background: #c7a32f;
-        border-radius: 50px;
-    }
-
-    .Pidgey{
-        width: 20%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .figure6{
-        background: #d2f35b;
-        border-radius: 50px;
-    }
-
-    .Rattata{
-        width: 20%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .figure7{
-        background: #db7af3;
-        border-radius: 50px;
-    }
-
-    .Spearow{
-        width: 20%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .figure8{
-        background: #9e8329;
-        border-radius: 50px;
-    }
-
-    .Ekans{
-        width: 20%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .figure9{
-        background: #c444b9;
-        border-radius: 50px;
-    }
-
-    .Pikachu{
-        width: 20%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .figure10{
-        background: #ecff83;
-        border-radius: 50px;
-    }
-
-    .Sandshrew{
-        width: 20%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .figure11{
-        background: #d19814;
-        border-radius: 50px;
-    }
-
-    .Nidoran{
-        width: 20%;
-        display: block;
-        margin: 0% auto;
-    }
-
-    .figure12{
-        background: #54aad2;
-        border-radius: 50px;
-    }
 }
 
-/* Fin Seccion busca tu pokemon*/
+.card-img-top{
+    background: #6293ee;
+}
 
-/* Pie de pagina */
+/* FIN SECCION BUSCA TU POKEMON */
+
+/* PIE DE PAGINA */
 footer {
     min-height: 70px;
     background-color: #afafaf;
@@ -513,13 +406,13 @@ footer {
     border-top: 1px solid #222;
 }
   
-/* Fin Pie de pagina */
+/* FIN PIE DE PAGINA */
 
 
 // Media query adaptable a pantallas igual o menor a 700px
 @media (max-width: 700px){
 
-/* Comienzo de la nav */
+/* COMIENZO DE LA NAV */
 .nav{
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -548,9 +441,9 @@ footer {
 .nav_input:checked + .nav_menu{
     clip-path: circle(100% at center);
 }
-/* Fin de la nav */
+/* FIN COMIENZO DE LA NAV */
 
-/* Seccion de noticias */
+/* SECCION DE NOTICIAS */
 #noticias{
     h1{
         font-family: $typography-news;
@@ -577,9 +470,9 @@ footer {
         display: none;
     }
 }
-/* Fin Seccion de noticias */
+/* FIN SECCION DE NOTICIAS */
 
-/* Seccion de todas las series */
+/* SECCION DE TODAS LAS SERIES */
 .capitulos{
     width: 100%;
 
@@ -587,10 +480,10 @@ footer {
         font-size: 20px;
     }
 }
-/* Fin Seccion de todas las series */
+/* FIN SECCION DE TODAS LAS SERIES */
 
 
-/* Seccion de contacto */
+/* SECCION DE CONTACTO */
 #contacto{
     h1{
         font-size:250%;
@@ -602,6 +495,6 @@ footer {
         font-size:150%;
     }
 }
-/* Fin Seccion de contacto */
+/* FIN SECCION DE CONTACTO */
 
 }

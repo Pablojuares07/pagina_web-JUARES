@@ -1,18 +1,29 @@
+.contenedor_todo {
+  background: #f4cfff;
+}
+
+.contacto, #contacto .contacto_contenedor {
+  background: #ffe25f;
+  padding-left: 15%;
+  padding-bottom: 5%;
+  border-radius: 50px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Contenedor de la pagina */
+/* CONTENEDOR DE LA PAGINA */
 .contenedor_todo {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Fin Contenedor de la pagina */
-/* Comienzo de la nav */
+/* FIN CONTENEDOR DE LA PAGINA */
+/* COMIENZO DE LA NAV */
 .nav {
   background: #f4722c;
   height: 80px;
@@ -70,7 +81,7 @@
   background: tomato;
 }
 
-/* Rotacion infinita del logo */
+/* ROTACION INFINITA DEL LOGO */
 .rotate {
   animation: rotation 3s infinite linear;
 }
@@ -83,9 +94,9 @@
     transform: rotate(359deg);
   }
 }
-/* Fin Rotacion infinita del logo */
-/* Fin comienzo de la nav */
-/* Seccion de noticias */
+/* FIN ROTACION INFINITA DEL LOGO */
+/* FIN COMIENZO DE LA NAV */
+/* SECCION DE NOTICIAS */
 #noticias .bloques_de_noticias {
   display: flex;
   width: 100%;
@@ -135,8 +146,8 @@
   left: 15px;
 }
 
-/* Fin Seccion de noticias */
-/* Seccion de contacto */
+/* FIN SECCION DE NOTICIAS */
+/* SECCION DE CONTACTO */
 .text {
   width: 80%;
   max-width: 1000px;
@@ -156,15 +167,8 @@
   font-size: 300%;
   margin-top: 50px;
 }
-#contacto .contacto_contenedor {
-  background: #ffe25f;
-  padding-left: 15%;
-  padding-bottom: 5%;
-  border-radius: 50px;
-}
-
-/* Fin Seccion de contacto */
-/* Seccion de series */
+/* FIN SECCION DE CONTACTO */
+/* SECCION DE SERIES */
 .series_contenedor {
   padding-top: 1%;
 }
@@ -176,8 +180,8 @@
   padding-top: 1%;
 }
 
-/* Fin Seccion de series */
-/* Seccion de todas las series */
+/* FIN SECCION DE SERIES */
+/* SECCION DE TODAS LAS SERIES */
 #todas_las_series {
   padding-left: 3%;
   padding-bottom: 1%;
@@ -233,8 +237,8 @@ div.reset {
   clear: both;
 }
 
-/* Fin Seccion de todas las series */
-/* Seccion de peliculas */
+/* FIN SECCION DE TODAS LAS SERIES */
+/* SECCION DE PELICULAS */
 #peliculas {
   padding-left: 3%;
   padding-bottom: 1%;
@@ -280,8 +284,8 @@ div.reset {
   transform: scale(0.9);
 }
 
-/* Fin Seccion de peliculas */
-/* Seccion busca tu pokemon*/
+/* FIN SECCION DE PELICULAS */
+/* SECCION BUSCA TU POKEMON */
 #pokemones .bloques_de_pokemon {
   display: flex;
   width: 100%;
@@ -305,117 +309,13 @@ div.reset {
   font-size: 150%;
   text-align: center;
 }
-#pokemones .Bulbasaur {
-  width: 20%;
-  display: block;
-  margin: 0% auto;
-}
-#pokemones .figure {
-  background: #b7fb64;
-  border-radius: 50px;
-}
-#pokemones .Charmander {
-  width: 20%;
-  display: block;
-  margin: 0% auto;
-}
-#pokemones .figure2 {
-  background: #f0a44e;
-  border-radius: 50px;
-}
-#pokemones .Squirtle {
-  width: 20%;
-  display: block;
-  margin: 0% auto;
-}
-#pokemones .figure3 {
-  background: #60dfff;
-  border-radius: 50px;
-}
-#pokemones .Caterpie {
-  width: 20%;
-  display: block;
-  margin: 0% auto;
-}
-#pokemones .figure4 {
-  background: #4ef0a7;
-  border-radius: 50px;
-}
-#pokemones .Weedle {
-  width: 20%;
-  display: block;
-  margin: 0% auto;
-}
-#pokemones .figure5 {
-  background: #c7a32f;
-  border-radius: 50px;
-}
-#pokemones .Pidgey {
-  width: 20%;
-  display: block;
-  margin: 0% auto;
-}
-#pokemones .figure6 {
-  background: #d2f35b;
-  border-radius: 50px;
-}
-#pokemones .Rattata {
-  width: 20%;
-  display: block;
-  margin: 0% auto;
-}
-#pokemones .figure7 {
-  background: #db7af3;
-  border-radius: 50px;
-}
-#pokemones .Spearow {
-  width: 20%;
-  display: block;
-  margin: 0% auto;
-}
-#pokemones .figure8 {
-  background: #9e8329;
-  border-radius: 50px;
-}
-#pokemones .Ekans {
-  width: 20%;
-  display: block;
-  margin: 0% auto;
-}
-#pokemones .figure9 {
-  background: #c444b9;
-  border-radius: 50px;
-}
-#pokemones .Pikachu {
-  width: 20%;
-  display: block;
-  margin: 0% auto;
-}
-#pokemones .figure10 {
-  background: #ecff83;
-  border-radius: 50px;
-}
-#pokemones .Sandshrew {
-  width: 20%;
-  display: block;
-  margin: 0% auto;
-}
-#pokemones .figure11 {
-  background: #d19814;
-  border-radius: 50px;
-}
-#pokemones .Nidoran {
-  width: 20%;
-  display: block;
-  margin: 0% auto;
-}
-#pokemones .figure12 {
-  background: #54aad2;
-  border-radius: 50px;
+
+.card-img-top {
+  background: #6293ee;
 }
 
-/* Fin Seccion busca tu pokemon*/
-/* Pie de pagina */
+/* FIN SECCION BUSCA TU POKEMON */
+/* PIE DE PAGINA */
 footer {
   min-height: 70px;
   background-color: #afafaf;
@@ -442,9 +342,9 @@ footer {
   border-top: 1px solid #222;
 }
 
-/* Fin Pie de pagina */
+/* FIN PIE DE PAGINA */
 @media (max-width: 700px) {
-  /* Comienzo de la nav */
+  /* COMIENZO DE LA NAV */
   .nav {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -474,8 +374,8 @@ footer {
     clip-path: circle(100% at center);
   }
 
-  /* Fin de la nav */
-  /* Seccion de noticias */
+  /* FIN COMIENZO DE LA NAV */
+  /* SECCION DE NOTICIAS */
   #noticias h1 {
     font-family: "Kaushan Script", cursive;
     font-size: 150%;
@@ -497,8 +397,8 @@ footer {
     display: none;
   }
 
-  /* Fin Seccion de noticias */
-  /* Seccion de todas las series */
+  /* FIN SECCION DE NOTICIAS */
+  /* SECCION DE TODAS LAS SERIES */
   .capitulos {
     width: 100%;
   }
@@ -506,8 +406,8 @@ footer {
     font-size: 20px;
   }
 
-  /* Fin Seccion de todas las series */
-  /* Seccion de contacto */
+  /* FIN SECCION DE TODAS LAS SERIES */
+  /* SECCION DE CONTACTO */
   #contacto h1 {
     font-size: 250%;
   }
@@ -517,7 +417,7 @@ footer {
     font-size: 150%;
   }
 
-  /* Fin Seccion de contacto */
+  /* FIN SECCION DE CONTACTO */
 }
 
 /*# sourceMappingURL=estilos.css.map */
