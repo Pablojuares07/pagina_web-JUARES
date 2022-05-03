@@ -24,12 +24,21 @@
 
 /* FIN CONTENEDOR DE LA PAGINA */
 /* COMIENZO DE LA NAV */
+
+
+
+
 .nav {
   background: #f4722c;
   height: 80px;
   color: #ffffff;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .nav_contenedor {
