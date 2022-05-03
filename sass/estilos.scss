@@ -5,7 +5,7 @@ $colour-orange: #f4722c;
 
 // MIXIN
 @mixin pagina() {
-    background: #f4cfff;
+    background: #fffde6;
 }
 
 .contenedor_todo{
@@ -53,6 +53,11 @@ $typography-contact: 'Fredoka One';
     color: $colour-white;
     border-bottom-left-radius: map-get($estilonav, bordeder);
     border-bottom-right-radius: map-get($estilonav, bordeizq);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .nav_contenedor{
@@ -371,6 +376,7 @@ div.reset {
 
 .card-img-top{
     background: #6293ee;
+    border-radius: 30px;
 }
 
 /* FIN SECCION BUSCA TU POKEMON */

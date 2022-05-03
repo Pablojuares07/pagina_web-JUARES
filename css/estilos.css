@@ -1,5 +1,5 @@
 .contenedor_todo {
-  background: #f4cfff;
+  background: #fffde6;
 }
 
 .contacto, #contacto .contacto_contenedor {
@@ -24,10 +24,6 @@
 
 /* FIN CONTENEDOR DE LA PAGINA */
 /* COMIENZO DE LA NAV */
-
-
-
-
 .nav {
   background: #f4722c;
   height: 80px;
@@ -321,6 +317,7 @@ div.reset {
 
 .card-img-top {
   background: #6293ee;
+  border-radius: 30px;
 }
 
 /* FIN SECCION BUSCA TU POKEMON */
